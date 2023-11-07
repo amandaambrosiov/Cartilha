@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit&family=Maitree:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&display=swap');
 
 /* font-family: 'Kanit', sans-serif; */
 /* font-family: 'Maitree', serif; */
@@ -7,10 +8,22 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Kanit', sans-serif;
+    color: rgb(75, 75, 75);
 }
 
 .main {
     margin: 2rem;
+}
+
+ul {
+    list-style: none;
+
+}
+
+ul li {
+    display: flex;
+    text-align: left;
+    font-size: 20px;
 }
 
 .logo_egp {
@@ -22,28 +35,124 @@
 .logo_seplag {
     width: auto;
     height: 90px;
+    margin-left: 1rem;
 }
 
 .title {
     color: #26a737;
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 
-.description{
-    font-size: 0.8rem;
+.description {
+    font-size: 1rem;
     margin-top: -0.6rem;
     color: rgb(75, 75, 75);
 }
+
 .center {
     display: flex;
     justify-content: center;
 }
+
 .subtitle {
     color: #26a737;
     font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 3rem;
 }
-.btn{
+
+.btn {
     margin: 0.6rem;
+}
+
+.pagina02 {
+    background-color: #26a737;
+}
+
+.title_white {
+    color: #ffff;
+}
+
+.margin_title {
+    margin: 3rem 4rem;
+}
+
+.paragrafo {
+    color: #ffff;
+    font-size: 22px;
+    margin: 1rem 7rem;
+    font-weight: light;
+}
+
+.title05 {
+    display: flex;
+    text-align: left;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 2rem;
+}
+
+.img05 {
+    height: 100px;
+    margin-top: 2.5rem;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    margin-top: 2rem;
+}
+
+.square {
+    /* background-color: #26a737; */
+    padding: 2rem;
+    padding-left: 6rem;
+    margin: 1.5rem 0;
+}
+
+.green {
+    background-color: #26a737;
+}
+
+.darkorange {
+    background-color: #e94f0e;
+}
+
+.orange {
+    background-color: #e4a500;
+}
+
+.blue {
+    background-color: #2db39e;
+}
+
+.square .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.square2 .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: end;
+}
+
+.square2 {
+    padding: 2rem;
+    padding-right: 6rem;
+    margin: 1.5rem 0;
+}
+.square2 p{
+    display: flex;
+    text-align: end;
+}
+
+.square p,
+.square2 p {
+    color: #ffff;
+    font-size: 25px;
+    font-weight: lighter;
 }
