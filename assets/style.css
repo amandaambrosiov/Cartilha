@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;300;400;500;600;700;800;900&display=swap');
 /* font-family: 'Kanit', sans-serif; */
+
 * {
     margin: 0;
     padding: 0;
@@ -7,9 +8,28 @@
     font-family: 'Kanit', sans-serif;
     color: rgb(75, 75, 75);
 }
-main{
-    margin-bottom: 5rem;
+
+body {
+    overflow-x: hidden;
 }
+
+/* BARRA DE SCROLL DO SITE  */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #e9e9e9;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: rgb(173, 173, 173);
+    border-radius: 10px;
+}
+
+/* FIM DA BARRA DE SCROLL  */
+
+/* CONTEUDO PRINCIPAL  */
 .main {
     margin: 2rem;
     margin-bottom: 5rem;
@@ -26,6 +46,9 @@ ul li {
     font-size: 20px;
 }
 
+/* INÍCIO */
+
+/* IMAGENS */
 .logo_egp {
     width: auto;
     height: 70px;
@@ -38,23 +61,27 @@ ul li {
     margin-left: 1rem;
 }
 
+/* TITULO */
 .title {
     color: #26a737;
     font-size: 4rem;
     margin-top: 0.8rem;
 }
 
+/* TEXTO ABAIXO DO TITULO  */
 .description {
     font-size: 1rem;
     margin-top: -0.6rem;
     color: rgb(75, 75, 75);
 }
 
+/* CLASSE PARA CENTRALIZAR OS DEMAIS CONTEUDOS   */
 .center {
     display: flex;
     justify-content: center;
 }
 
+/* TITULO DA SEGUNDA PAGINA  */
 .subtitle {
     color: #26a737;
     font-size: 2rem;
@@ -62,30 +89,38 @@ ul li {
     margin-bottom: 3rem;
 }
 
-.btn {
-    margin: 0.6rem;
-}
-
+/* BACKGROUND DAS PAGINAS VERDES */
 .pagina02 {
     background-color: #26a737;
 }
 
+/* TITULO BRANCO  */
 .title_white {
     color: #ffff;
 }
 
+/* MARGEM DE TODOS OS TITULOS  */
 .margin_title {
     margin: 3rem 4rem;
 }
 
+/* TITULO OBJETIVOS PARA CENTRALIZAR  */
+.objetivos {
+    margin: 30px 0;
+}
+
+/* PARAGRAFO DA PAGINA DE OBJETIVOS  */
 .paragrafo {
     color: #ffff;
-    font-size: 22px;
-    margin: 1rem 7rem;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 0 5%;
     font-weight: light;
 }
 
-.title05 {
+/* TITULO DA PAGINA DE PRINCIPIOS */
+.title_principios {
     display: flex;
     text-align: left;
     font-size: 50px;
@@ -93,24 +128,70 @@ ul li {
     margin-top: 2rem;
 }
 
-.img05 {
+/* IMAGENS DA PAGINA DE PRINCIPIOS */
+.img_principios {
     height: 100px;
     margin-top: 2.5rem;
 }
 
+/* COLUNA QUE DIVIDE IMAGEM E CAIXAS DE TEXTO DA PAGINA DE PRINCIPIOS  */
 .wrapper {
     display: grid;
     grid-template-columns: 50% 50%;
     margin-top: 2rem;
 }
 
+/* IMAGENS DAS PAGINAS COM CAIXA DE TEXTO  */
+.img_pessoa {
+    display: flex;
+    justify-content: center ;
+    margin-top: 6rem;
+}
+
+/* CAIXA DE TEXTO DA PAGINA DE PRINCIPIOS  */
 .square {
-    /* background-color: #26a737; */
     padding: 2rem;
     padding-left: 6rem;
     margin: 1.5rem 0;
 }
 
+/* TITULO DA CAIXA DA PAGINA DE PRINCIPIOS ESQUERDO */
+.square .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+/* TITULO CAIXA DE PRINCIPIOS DO LADO DIREITO */
+.square2 .title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: end;
+}
+
+/* CAIXA DE TEXTO DE PRINCIPIOS LADO DIREITO  */
+.square2 {
+    padding: 2rem;
+    padding-right: 6rem;
+    margin: 1.5rem 0;
+}
+
+/* PARAGRAFO DA CAIXA DE TEXTO DO LADO DIREITO  */
+.square2 p {
+    display: flex;
+    text-align: end;
+}
+
+/* ESTILO GERAL DOS PARAGRAFOS DE CAIXA DE TEXTO  */
+.square p,
+.square2 p {
+    color: #ffff;
+    font-size: 25px;
+    font-weight: light;
+}
+
+/* CORES DAS CAIXAS */
 .green {
     background-color: #26a737;
 }
@@ -127,42 +208,7 @@ ul li {
     background-color: #2db39e;
 }
 
-.square .title {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-}
-
-.square2 .title {
-    color: black;
-    font-size: 30px;
-    font-weight: bold;
-    text-align: end;
-}
-
-.square2 {
-    padding: 2rem;
-    padding-right: 6rem;
-    margin: 1.5rem 0;
-}
-
-.square2 p {
-    display: flex;
-    text-align: end;
-}
-
-.square p,
-.square2 p {
-    color: #ffff;
-    font-size: 25px;
-    font-weight: light;
-}
-
-.botoes {
-    position: fixed;
-    bottom: 0;
-    margin: 0 39%;
-}
+/* BOTOES PARA PASSAR DE PAGINA  */
 
 .button {
     border: 1px solid #26a737;
@@ -174,6 +220,22 @@ ul li {
     opacity: 80%;
 }
 
+.icone {
+    color: #26a737;
+    margin: 0 5px;
+}
+
+.button:hover {
+    color: #ffff;
+    background-color: #26a737;
+}
+
+.button:hover>.icone {
+    color: #ffff;
+}
+
+/* BOTOES BRANCOS  */
+
 .button_white {
     color: #ffff;
     border: 1px solid #ffff;
@@ -184,19 +246,9 @@ ul li {
     opacity: 80%;
 }
 
-.icone {
-    color: #26a737;
-    margin: 0 5px;
-}
-
 .icone_white {
     color: #ffff;
     margin: 0 5px;
-}
-
-.button:hover {
-    color: #ffff;
-    background-color: #26a737;
 }
 
 .button_white:hover {
@@ -204,10 +256,30 @@ ul li {
     background-color: #ffff;
 }
 
-.button:hover>.icone {
-    color: #ffff;
-}
-
 .button_white:hover>.icone_white {
     color: #26a737;
 }
+
+/* DEIXAR BOTOES DE PAGINAS ESPECIFICAS FIXO  */
+.button_fixed {
+    position: fixed;
+    bottom: 0;
+    margin-left: calc(100% - 60%);
+}
+/* IMAGEM DE FUNDO DA PAGINA 03 E 04  */
+.background_img {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+
+/* PARAGRAFO DA PAGINA 03 */
+.p_white {
+    color: #ffff;
+    font-weight: light;
+    font-size: 28px;
+    max-width: 70%;
+    display: flex;
+    text-align: left;
+}
+
