@@ -464,8 +464,8 @@ strong a {
             font-size: 30px !important;
             font-weight: bold;
             padding-top: 30px;
-            display: flex;
-            text-align: left;
+            /* display: flex; */
+            /* text-align: left; */
         }
 
         .title_orange {
@@ -473,7 +473,7 @@ strong a {
         }
 
         .logo {
-            margin-top: 70px;
+            margin-top: 20px;
             height: 70px;
         }
 
