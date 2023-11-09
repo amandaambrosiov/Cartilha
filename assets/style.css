@@ -31,8 +31,10 @@ body::-webkit-scrollbar-thumb {
 
 /* CONTEUDO PRINCIPAL  */
 .main {
-    margin: 2rem;
-    margin-bottom: 5rem;
+    margin: 4rem;
+    padding-top: 20px;
+    margin-bottom: 1rem;
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.1) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
 }
 
 ul {
@@ -44,6 +46,10 @@ ul li {
     display: flex;
     text-align: left;
     font-size: 20px;
+}
+
+a{
+    margin-left: 10px;
 }
 
 /* INÍCIO */
@@ -72,6 +78,7 @@ ul li {
 .description {
     font-size: 1rem;
     margin-top: -0.6rem;
+    padding-bottom: 30px;
     color: rgb(75, 75, 75);
 }
 
@@ -90,13 +97,26 @@ ul li {
 }
 
 /* BACKGROUND DAS PAGINAS VERDES */
-.pagina02 {
+.background_green {
     background-color: #26a737;
+}
+
+.background_orange{
+    background-color: #e94f0e;
 }
 
 /* TITULO BRANCO  */
 .title_white {
     color: #ffff;
+    padding-bottom: 30px;
+}
+.title_orange{
+color: #e06a0c;
+display: flex;
+    text-align: left;
+    font-size: 40px;
+    font-weight: bolder;
+    margin-top: 1.8em;
 }
 
 /* MARGEM DE TODOS OS TITULOS  */
@@ -107,6 +127,18 @@ ul li {
 /* TITULO OBJETIVOS PARA CENTRALIZAR  */
 .objetivos {
     margin: 30px 0;
+    display: flex;
+    text-align: left;
+}
+.title_white_green{
+    margin: 0.2em 0;
+    display: flex;
+    text-align: left;
+}
+.title_white_orange{
+    margin: 0.6em 0;
+    display: flex;
+    text-align: left;
 }
 
 /* PARAGRAFO DA PAGINA DE OBJETIVOS  */
@@ -115,7 +147,7 @@ ul li {
     font-size: 25px;
     display: flex;
     justify-content: center;
-    margin: 0 5%;
+    margin: 0 10%;
     font-weight: light;
 }
 
@@ -144,8 +176,8 @@ ul li {
 /* IMAGENS DAS PAGINAS COM CAIXA DE TEXTO  */
 .img_pessoa {
     display: flex;
-    justify-content: center ;
-    margin-top: 6rem;
+    justify-content: center;
+    margin-top: 15rem;
 }
 
 /* CAIXA DE TEXTO DA PAGINA DE PRINCIPIOS  */
@@ -260,15 +292,10 @@ ul li {
     color: #26a737;
 }
 
-/* DEIXAR BOTOES DE PAGINAS ESPECIFICAS FIXO  */
-.button_fixed {
-    position: fixed;
-    bottom: 0;
-    margin-left: calc(100% - 60%);
-}
 /* IMAGEM DE FUNDO DA PAGINA 03 E 04  */
 .background_img {
-    position: fixed;
+    /* position: fixed; */
+    margin-top: 4rem;
     left: 0;
     bottom: 0;
 }
@@ -278,8 +305,57 @@ ul li {
     color: #ffff;
     font-weight: light;
     font-size: 28px;
-    max-width: 70%;
+    max-width: 60%;
     display: flex;
     text-align: left;
+
 }
 
+.paragrafo12 {
+    font-size: 40px;
+    margin: 3em 7em;
+}
+.paragrafo17{
+    margin-left: 4em;
+    max-width: 70%;
+}
+
+.text_green {
+    color: #26a737;
+}
+
+.lista {
+    margin: 2em 3em;
+    padding-bottom: 30px;
+    color: #ffff;
+}
+.lista_gray{
+    margin: 2em 3em;
+}
+
+.circle_orange {
+    color: #e4a500;
+    margin-right: 10px;
+    margin-bottom: -50px;
+    font-size: 30px;
+}
+.circle_green{
+    color: #26a737;
+    margin-right: 10px;
+    margin-bottom: -50px;
+    font-size: 30px;
+}
+
+.img14 {
+    margin-top: -10em;
+display: flex;
+justify-content: flex-end;
+}
+.img15{
+    margin-top: -2em;
+}
+.img16{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+}
